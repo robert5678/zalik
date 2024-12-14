@@ -1,0 +1,41 @@
+﻿@model zalik.Models.Product
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        h2 {
+            color: #00bcd4;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #f5f5f5;
+        }
+
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Details</h2>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Price:</strong> @Model.Price</p>
+    <p><strong>Quantity:</strong> @Model.Quantity</p>
+    <a href="@Url.Action("Index", "Product")">Back to List</a>
+</body>
+</html>
